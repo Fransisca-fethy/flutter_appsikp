@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "231152663286",
+    "project_id": "app-sikp",
+    "storage_bucket": "app-sikp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231152663286:android:9bae267f0bd665b05c8ad7",
+        "android_client_info": {
+          "package_name": "appsikp.flutter_appsikp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231152663286-aliti7c5f83bmaq2cttatv3nth7hprer.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "appsikp.flutter_appsikp",
+            "certificate_hash": "9f09e7e2c753dd93ceded12d8bd0d8d02e7ef4a0"
+          }
+        },
+        {
+          "client_id": "231152663286-4us063aecntbaa86264s25jk9kai0gh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs0gErakwCnH42gQRccURvUrfxgWQnZTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231152663286-4us063aecntbaa86264s25jk9kai0gh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
