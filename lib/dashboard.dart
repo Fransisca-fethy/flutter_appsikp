@@ -3,6 +3,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_appsikp/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'mahasiswa/addsurat.dart';
+
 class Dashboard extends StatefulWidget {
 Dashboard({Key key, this.title}) : super(key: key);
 final String title;
@@ -47,7 +49,9 @@ class _DashboardState extends State<Dashboard> {
           Card(
           margin: EdgeInsets.all(10.0),
           child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+              },
               splashColor: Colors.orange,
               child: Center(
                 child: Column(
@@ -64,7 +68,9 @@ class _DashboardState extends State<Dashboard> {
               Card(
                 margin: EdgeInsets.all(10.0),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                   splashColor: Colors.orange,
                   child: Center(
                     child: Column(
@@ -81,7 +87,9 @@ class _DashboardState extends State<Dashboard> {
               Card(
                 margin: EdgeInsets.all(10.0),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                   splashColor: Colors.orange,
                   child: Center(
                     child: Column(
@@ -98,7 +106,9 @@ class _DashboardState extends State<Dashboard> {
               Card(
                 margin: EdgeInsets.all(10.0),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                   splashColor: Colors.orange,
                   child: Center(
                     child: Column(
