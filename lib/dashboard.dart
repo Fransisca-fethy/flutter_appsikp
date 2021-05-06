@@ -36,6 +36,19 @@ class _DashboardState extends State<Dashboard> {
                 backgroundColor: Colors.white,
               ),
             ),
+        ListTile(
+        title: Text("Logout"),
+        trailing: Icon(Icons.exit_to_app),
+        onTap: () async {
+          SharedPreferences pref = await SharedPreferences.getInstance();
+          await pref.setInt("is_login", 0);
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) => MyHomePage()),
+          );
+        },
+        ),
           ],
         ),
       ),
