@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_appsikp/dashboard.dart';
+import 'package:flutter_appsikp/mahasiswa/dashboardmhs.dart';
 import 'package:flutter_appsikp/login_page.dart';
 import 'package:flutter_appsikp/splashscreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
