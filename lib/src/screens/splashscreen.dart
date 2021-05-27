@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_appsikp/dashboard.dart';
-import 'package:flutter_appsikp/login_page.dart';
+import 'package:flutter_appsikp/src/screens/login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
@@ -26,14 +26,15 @@ class _SplashScreenState extends State<SplashScreen> {
     SharedPreferences pref = await SharedPreferences.getInstance();
     int login = pref.getInt("is_login");
     if(login == 0){
+    //   return Timer(duration, () {
+    //     Navigator.pushReplacement(context,
+    //          MaterialPageRoute(builder: (context) => LoginPage()));
+    //   });
+    // }else {
       return Timer(duration, () {
-        Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => Dashboard(title: "Dashboard",)));
-      });
-     }else {
-       return Timer(duration, () {
-         Navigator.pushReplacement(context,
-             MaterialPageRoute(builder: (context) => LoginPage()));});
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => Dashboard(title: "Dashboard",)));
+    });
     }
   }
 
