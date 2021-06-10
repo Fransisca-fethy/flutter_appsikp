@@ -26,15 +26,15 @@ class _SplashScreenState extends State<SplashScreen> {
     SharedPreferences pref = await SharedPreferences.getInstance();
     int login = pref.getInt("is_login");
     if(login == 0){
-    //   return Timer(duration, () {
-    //     Navigator.pushReplacement(context,
-    //          MaterialPageRoute(builder: (context) => LoginPage()));
-    //   });
+       return Timer(duration, () {
+         Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) => LoginPage()));
+       });
     // }else {
-      return Timer(duration, () {
-      Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => Dashboard(title: "Dashboard",)));
-    });
+    //   return Timer(duration, () {
+    //   Navigator.pushReplacement(context,
+    //       MaterialPageRoute(builder: (context) => Dashboard(title: "Dashboard",)));
+    // });
     }
   }
 
