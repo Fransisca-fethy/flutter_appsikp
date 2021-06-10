@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  //bool _isObscure = true;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +23,7 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           TextField(
+            //obscureText: _isObscure,
             controller: passwordController,
             decoration: InputDecoration(
               labelText: "Password",

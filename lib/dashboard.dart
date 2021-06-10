@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_appsikp/mahasiswa/viewjadwal.dart';
 import 'package:flutter_appsikp/mahasiswa/addkp.dart';
 import 'package:flutter_appsikp/mahasiswa/addprakp.dart';
 import 'package:flutter_appsikp/mahasiswa/addsurat.dart';
@@ -145,7 +146,7 @@ class _DashboardState extends State<Dashboard> {
                 onTap: () {
                   Navigator.push(context,
                       new MaterialPageRoute(
-                        builder: (_) => new HomePage(),
+                        builder: (_) => new ViewJadwal(),
                       ));
                 },
                 splashColor: Colors.orange,
